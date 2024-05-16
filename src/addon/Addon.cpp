@@ -1,7 +1,3 @@
-//
-// Created by Seres67 on 16/05/2024.
-//
-
 #include "addon/Addon.hpp"
 #include "imgui/imgui.h"
 

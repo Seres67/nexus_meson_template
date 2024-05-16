@@ -1,7 +1,3 @@
-//
-// Created by Seres67 on 16/05/2024.
-//
-
 #ifndef NEXUS_TEMPLATE_ADDON_HPP
 #define NEXUS_TEMPLATE_ADDON_HPP
 

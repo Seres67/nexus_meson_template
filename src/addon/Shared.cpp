@@ -1,7 +1,3 @@
-//
-// Created by Seres67 on 16/05/2024.
-//
-
 #include "include/addon/Shared.hpp"
 AddonAPI *APIDefs = nullptr;
 
