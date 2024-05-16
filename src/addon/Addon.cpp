@@ -17,8 +17,8 @@ void Addon::load(AddonAPI *aApi) {
     APIDefs->RegisterRender(ERenderType_Render, Addon::render);
     APIDefs->RegisterRender(ERenderType_OptionsRender, Addon::render_options);
 
-    AddonPath = APIDefs->GetAddonDirectory(m_addon_name.c_str());
-    SettingsPath = APIDefs->GetAddonDirectory((m_addon_name + "/settings.json").c_str());
+    AddonPath = APIDefs->GetAddonDirectory(m_addon_name.data());
+    SettingsPath = APIDefs->GetAddonDirectory((std::string(m_addon_name.data()) + "/settings.json").c_str());
     std::filesystem::create_directory(AddonPath);
 }
 
@@ -31,7 +31,7 @@ void Addon::unload() {
 
 void Addon::render() {
     ImGui::PushFont(static_cast<ImFont *>(NexusLink->Font));
-    if (ImGui::Begin(m_addon_name.c_str(), nullptr, 0)) {
+    if (ImGui::Begin(m_addon_name.data(), nullptr, 0)) {
         //TODO: heres the main stuff
     }
     ImGui::PopFont();

@@ -19,7 +19,7 @@ private:
     static std::filesystem::path AddonPath;
     static std::filesystem::path SettingsPath;
     //TODO: change name
-    static constexpr std::string m_addon_name = "template";
+    static constexpr std::string_view m_addon_name = "template";
 };
 
 
