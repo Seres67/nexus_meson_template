@@ -14,7 +14,7 @@ extern "C" __declspec(dllexport) AddonDefinition *GetAddonDef()
     AddonDef.Version.Minor = 1;
     AddonDef.Version.Build = 0;
     AddonDef.Version.Revision = 0;
-    AddonDef.Author = "Seres67";
+    AddonDef.Author = "Author";
     AddonDef.Description = "Template using meson and ninja to build";
     AddonDef.Load = Addon::load;
     AddonDef.Unload = Addon::unload;
